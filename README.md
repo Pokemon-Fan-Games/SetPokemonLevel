@@ -10,7 +10,8 @@ Este Plugin agrega una nueva opción al menú del equipo del Pokémon, se puede 
 
 ![level menu](images/choose.png)
 
-Si tienen algun Plugin de Level Caps como LevelCapsEX que modifica el `GameData::GrowthRate.max_level`, el nivel maximo estará regido por los cambios de ese Plugin.
+> [!NOTE]  
+> Si tienen algun Plugin de Level Caps como LevelCapsEX que modifica el `GameData::GrowthRate.max_level`, el nivel maximo estará regido por los cambios de ese Plugin.
 
 ## Instalación
 
