@@ -19,8 +19,10 @@ module LevelSetter
       end
       params.setRange(1, max_range)
       params.setDefaultValue(party_max_level)
+      params.setCancelValue(-1)
       level = pbMessageChooseNumber(_INTL("Elige el nivel para {1} (máx. {2}).",
                                         level_setter.pokemon.name, params.maxNumber), params)
+      next if level < 1
       level_setter.set_level(level)
     }
   })
