@@ -11,13 +11,14 @@ module LevelSetter
     "parent"    => :main,
     "effect"    => proc {  |level_setter|
       params = ChooseNumberParams.new
+      party_max_level = level_setter.get_party_max_level
       if defined?(MAX_LEVEL_POSSIBLE) && MAX_LEVEL_POSSIBLE == :party
-        max_range = level_setter.get_party_max_level
+        max_range = party_max_level
       else
         max_range = GameData::GrowthRate.max_level
       end
       params.setRange(1, max_range)
-      params.setDefaultValue(level_setter.get_party_max_level)
+      params.setDefaultValue(party_max_level)
       level = pbMessageChooseNumber(_INTL("Elige el nivel para {1} (máx. {2}).",
                                         level_setter.pokemon.name, params.maxNumber), params)
       level_setter.set_level(level)
