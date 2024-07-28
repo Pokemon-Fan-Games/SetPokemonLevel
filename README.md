@@ -16,4 +16,4 @@ Este Plugin agrega una nueva opción al menú del equipo del Pokémon, se puede 
 
 ## Instalación
 
-Solo hay que descargar el [zip](https://github.com/Pokemon-Fan-Games/SetPokemonLevel/releases/download/v1.0.1/SetPokemonLevel.zip) del release y extraerlo en la carpeta de su juego.
+Solo hay que descargar el [zip](https://github.com/Pokemon-Fan-Games/SetPokemonLevel/releases/download/v1.0.2/SetPokemonLevel.zip) del release y extraerlo en la carpeta de su juego.
